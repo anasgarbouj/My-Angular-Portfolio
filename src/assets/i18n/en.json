@@ -1,0 +1,175 @@
+{
+	"Header.Item1": "About me",
+	"Header.Item2": "Experience",
+	"Header.Item3": "Work",
+	"Header.Item4": "Testimonial",
+	"Header.Item5": "Contact",
+	"Header.cvBtn": "Resume",
+	"Header.cvName": "mycv.pdf",
+	"Banner.Pretitle": "Hello! My name is",
+	"Banner.Description": "Greetings, I'm Mohamed Anas Guerbouj, a 20-year-old computer science enthusiast currently in my second year of pursuing a Software Engineering degree. I specialize in full-stack JavaScript web development, and I'm deeply passionate about this dynamic field. What sets me apart is my unwavering commitment to learning and my ability to rapidly grasp new concepts. I have a profound love for coding and firmly believe that technology is shaping the future. I'm dedicated to being a part of this transformative journey, always eager to take on new challenges and push the boundaries of what's possible in web development.",
+	"Banner.ActionBtn": "Get in touch",
+	"AboutMe.Title": "About me",
+	"AboutMe.Paragraphs": [
+		"A brief introduction to my background: I'm Mohamed Anas Guerbouj, a 20-year-old currently in my second year of a Software Engineering program. With a specific focus on full-stack JavaScript web development, I've embraced the dynamic world of coding and its limitless possibilities. What truly defines me is my relentless commitment to learning and my aptitude for quickly grasping new concepts. My deep-seated love for coding drives me to explore and expand my skill set continually. I thrive on tackling complex problems and firmly believe that ongoing learning is the foundation of success in the ever-evolving tech landscape. Whether it's crafting responsive web applications or delving into the intricacies of server-side scripting, I'm always ready for the next coding adventure",
+		"Some of the technologies that I have trained and worked on include (but are not limited to):"
+	],
+	"AboutMe.conclude": [
+		"So that's a bit about me. Can't wait to bring my skills and passion to some more exciting projects!"
+	],
+	"Experience.Title": "Where I've Worked",
+	"Experience.Jobs": [
+		{
+			"Tab": "Etixway Paris",
+			"Title": "Full Stack development internship",
+			"Date": "july-august 2023",
+			"Description": [
+				"As an Intern at Etixway France, I am using ReactJS to help build a dashboard tailored to the company's unique needs.",
+				"This involves designing and optimizing user interface components, managing application state with Redux, and conducting thorough testing to ensure code quality.",
+				"This role is enhancing my technical skills and business acumen through practical application in a professional setting."			]
+		},
+
+		{
+			"Tab": "TGS (Tunisian Game Show)",
+			"Title": "Hackathon Participant",
+			"Date": "April - 2023",
+			"Description": [
+				"I'm thrilled to showcase our team's exceptional achievement in the TGS Hackathon, where we secured the first place.",
+				"This remarkable experience allowed me to contribute to the development of a gaming website using the MERN stack, further honing my technical skills and problem-solving abilities.",
+				"Throughout the hackathon, I actively engaged in collaborative teamwork, effectively communicating with my teammates and fellow participants.",
+				"Networking and connecting with individuals who share a similar passion for technology and gaming was a valuable aspect of this experience",
+				"Being part of the winning team not only validates my capabilities but also highlights my commitment to excellence and continuous learning.",
+				"I am excited to leverage the skills and connections gained from this achievement to contribute effectively and thrive in future professional endeavors."
+			]
+		},
+		{
+			"Tab": "NMTC",
+			"Title": "Hackathon Participant",
+			"Date": "March - 2023",
+			"Description": [
+				"Participated in the NMTC Hackathon, exploring the transformative potential of blockchain technology.",
+				"Collaborated with a team to develop a project showcasing the real-world applications of blockchain.",
+				"Expanded knowledge of blockchain and its innovative possibilities.",
+				"Secured the third place in the competition, highlighting dedication and adaptability."
+			]
+		},
+		{
+			"Tab": "Microsoft Isima Club",
+			"Title": "HR Manager",
+			"Date": "September 2022 - Today",
+			"Description": [
+				"As an HR Manager at the Microsoft ISIMA Club, I had the privilege of leading and nurturing a talented team of individuals with diverse backgrounds and skills.",
+				"My role involved developing and implementing HR strategies and initiatives that fostered a culture of collaboration, innovation, and inclusivity.",
+				"I successfully organized recruitment drives, onboarding processes, and skill development programs that contributed to the growth and development of the club's members.",
+				"By managing and resolving conflicts, I ensured a harmonious working environment and motivated the team to achieve their goals.",
+				"My experience in this role allowed me to refine my leadership and communication skills while playing a pivotal role in the club's success and impact."
+			]
+		},
+		{
+			"Tab": "IEEE Isima Sb",
+			"Title": "Vice-chair of Computer Society Chapter",
+			"Date": "June 2023 - Today",
+			"Description": [
+				"Serving as the Vice-Chair of the IEEE Computer Society Chapter, I had the opportunity to be part of a dynamic and forward-thinking team dedicated to advancing computer science and technology.",
+				"I actively contributed to organizing events, workshops, and seminars that fostered knowledge sharing and networking among our members.",
+				"My role involved collaborating with the Chair and the executive board to develop and execute strategic initiatives that enhanced the chapter's outreach and impact.",
+				"I also played a key role in membership growth and engagement, ensuring that the chapter remained vibrant and relevant.",
+				"This experience provided me with valuable leadership, organizational, and networking skills, reinforcing my commitment to the advancement of computer science within our community."
+			]
+		}
+	],
+	"FeatureProjects.Title": "Some Things I've Built",
+	"FeatureProjects.Label": "Featured Project",
+	"FeatureProjects.Projects": [
+		{
+			
+			"Title": "Africa Game Show",
+			"Description":"Web-based platform that allows users to book a place for the bigest event in tunisia africa game show and to know more about the event",
+			"imgs": [
+				"assets/images/portfolio/agstn1.PNG",
+				"assets/images/portfolio/agstn2.PNG",
+				"assets/images/portfolio/agstn3.PNG"
+			],
+			"demoLink": "https://agstn.netlify.app/#home",
+			"Technologies": [
+				"HTML/HTML5",
+				"CSS/CSS3",
+				"ReactJs",
+				"NodeJS",
+				"ExpressJs",
+				"Git",
+				"Figma"
+				
+			]
+		},
+		{
+			"Title": "Etixway Dashboard",
+			"Description": "During my internship, I contributed to creating a user-friendly dashboard for the company. This tool allows admins to add new users, while also enabling users to track their progress through visual charts. It has simplified data interpretation, improved transparency, and helped foster continuous improvement within the organization",
+			"imgs": [
+				"assets/images/etixway/img1.jpeg",
+				"assets/images/etixway/img2.jpeg",
+				"assets/images/etixway/img1.jpeg"
+			],
+			"demoLink": "",
+			"Technologies": [
+				"HTML/HTML5",
+				"CSS/CSS3",
+				"ReactJs",
+				"NodeJS",
+				"ExpressJs",
+				"Mongodb",
+				"Git"
+				
+			] 
+		},
+		{
+			"Title": "fama",
+			"Description": "I am currently working on the development of an innovative platform, fama.tn, intended to revolutionize the job market in Tunisia. This website aims to bridge the gap between job seekers and employers by providing a comprehensive, accessible platform for both parties",
+			"imgs": [
+				"assets/images/fama/fama1.jpg",
+				"assets/images/fama/fama2.jpg",
+				"assets/images/fama/fama3.jpg"			],
+			"Technologies": [
+				"HTML",
+				"CSS",
+				"Angular",
+				"Angular Material",
+				"Bootstrap",
+				"nodeJs",
+				"ExpressJs",
+				"Mongodb",
+				"Git"
+			]
+		}
+	],
+	"OtherProjects.Title": "Other Noteworthy Projects",
+	"OtherProjects.Projects": [
+		{
+			"Title": "Social Media App",
+			"Description": "I led the development of a social media application similar to Facebook using the MEAN stack. Our project featured user-friendly post creation and interaction with comments, showcasing our skills in full-stack development. With MongoDB, Express.js, Angular, and Node.js, we delivered a dynamic platform that fosters social engagement and content sharing.",
+			"ghLink": "https://github.com/anasgarbouj/social-media-interaction",
+			"Technologies": ["Angular", "Mongodb", "ExpressJs" ,"NodeJS"]
+		}
+	],
+	"Contact.Pretitle": "What’s Next",
+	"Contact.Title": "Get in touch!",
+	"Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message.",
+	"Contact.Btn": "Say Hello",
+	"Testimonial.Title": "What Others Say",
+	"Testimonial.Items": [
+		{
+			"Comment": "I supervised Mohamed Anas during his tenure as an intern on one of our web application development project. Throughout his time here, Mohamed Anas consistently impressed me with his dedication, technical aptitude, and quick learning abilities. I am confident that Mohamed's passion for web development and strong work ethic will ensure he continues to excel in his career. I wholeheartedly recommend him for any future opportunities in the field.",
+			"Name": "Mohamed Jellali",
+			"Position": "Full-Stack Web Developer Engineer | TypeScript / JavaScript",
+			"Company": "Etixway",
+			"img": "assets/images/testimonial/mohamed.jpg"
+		},
+		{
+			"Comment": "I had the opportunity to work with Anas as a freelance Angular developer, and I can only express my complete satisfaction. Anas demonstrated quick understanding and strong technical expertise throughout the project. He was able to turn our ideas into a functional and visually appealing website. His attention to detail, professionalism, and commitment to quality far exceeded our expectations. He was responsive, available, and always brought creative solutions to our problems. I highly recommend Anas to anyone in search of a competent and reliable Angular developer.",
+			"Name": "Ahmed El Mehri",
+			"Position": "Information Security Engineer",
+			"Company": "ITS Services",
+			"img": "assets/images/testimonial/ahmed.jpg"
+		}
+	]
+}
