@@ -1,5 +1,5 @@
 {
-	"Header.Item1": "About me",
+	"Header.Item1": "My Services",
 	"Header.Item2": "Experience",
 	"Header.Item3": "Work",
 	"Header.Item4": "Testimonial",
@@ -9,9 +9,9 @@
 	"Banner.Pretitle": "Hello! My name is",
 	"Banner.Description": "Greetings, I'm Mohamed Anas Guerbouj, a 20-year-old computer science enthusiast currently in my second year of pursuing a Software Engineering degree. I specialize in full-stack JavaScript web development, and I'm deeply passionate about this dynamic field. What sets me apart is my unwavering commitment to learning and my ability to rapidly grasp new concepts. I have a profound love for coding and firmly believe that technology is shaping the future. I'm dedicated to being a part of this transformative journey, always eager to take on new challenges and push the boundaries of what's possible in web development.",
 	"Banner.ActionBtn": "Get in touch",
-	"AboutMe.Title": "About me",
+	"AboutMe.Title": "My Services",
 	"AboutMe.Paragraphs": [
-		"A brief introduction to my background: I'm Mohamed Anas Guerbouj, a 20-year-old currently in my second year of a Software Engineering program. With a specific focus on full-stack JavaScript web development, I've embraced the dynamic world of coding and its limitless possibilities. What truly defines me is my relentless commitment to learning and my aptitude for quickly grasping new concepts. My deep-seated love for coding drives me to explore and expand my skill set continually. I thrive on tackling complex problems and firmly believe that ongoing learning is the foundation of success in the ever-evolving tech landscape. Whether it's crafting responsive web applications or delving into the intricacies of server-side scripting, I'm always ready for the next coding adventure",
+		" I'm open to work and for freelance projects in web development : <br> front-end,back-end and fullstack applications ",
 		"Some of the technologies that I have trained and worked on include (but are not limited to):"
 	],
 	"AboutMe.conclude": [
