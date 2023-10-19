@@ -72,7 +72,15 @@ export class HeaderComponent implements OnInit {
 		}
 		this.responsiveMenuVisible = false;
 	}
-
+	openLinkedin() { 
+		// Get the LinkedIn link from translation
+		this.languageService.translateService
+			.get("Header.linkedInlink")
+			.subscribe((link) => {
+				// Open the LinkedIn link in a new window
+				window.open(link, '_blank');
+			});
+	}
 	downloadCV() {
 		this.languageService.translateService
 			.get("Header.cvName")

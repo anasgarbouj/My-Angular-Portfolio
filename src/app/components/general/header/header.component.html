@@ -115,10 +115,16 @@
 				<ng-template ngbNavContent>Second content</ng-template>
 			</li>
 			<li ngbNavItem>
+				<a (click)="openLinkedin()" target="_blank" class="main-btn cv-btn" ngbNavLink>
+						{{"Header.linkedInname" | translate}}
+				</a>
+			</li>
+			<li ngbNavItem>
 				<a (click)="downloadCV()" class="main-btn cv-btn" ngbNavLink>
 					{{ "Header.cvBtn" | translate }}
 				</a>
 			</li>
+		
 		</ul>
 		<div class="menu-wrapper">
 			<div
@@ -191,11 +197,16 @@
 							</a>
 						</li>
 						<li>
+							<a (click)="openLinkedin()" target="_blank" class="main-btn cv-btn">
+									{{"Header.linkedInname" | translate}}
+							</a>
+						</li>
+						<li>
 							<a (click)="downloadCV()" class="main-btn cv-btn">
 								{{ "Header.cvBtn" | translate }}
 							</a>
 						</li>
-
+				
 						<!-- <li>
                             <img src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
                         </li> -->

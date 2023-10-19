@@ -6,6 +6,8 @@
 	"Header.Item5": "Contact",
 	"Header.cvBtn": "Resume",
 	"Header.cvName": "mycv.pdf",
+	"Header.linkedInname":"LinkedIn",
+	"Header.linkedInlink":"https://www.linkedin.com/in/mohamed-anas-guerbouj-5b1729222/",
 	"Banner.Pretitle": "Hello! My name is",
 	"Banner.Description": "Greetings, I'm Mohamed Anas Guerbouj, a 20-year-old computer science enthusiast currently in my second year of pursuing a Software Engineering degree. I specialize in full-stack JavaScript web development, and I'm deeply passionate about this dynamic field. What sets me apart is my unwavering commitment to learning and my ability to rapidly grasp new concepts. I have a profound love for coding and firmly believe that technology is shaping the future. I'm dedicated to being a part of this transformative journey, always eager to take on new challenges and push the boundaries of what's possible in web development.",
 	"Banner.ActionBtn": "Get in touch",
