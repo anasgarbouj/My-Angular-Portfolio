@@ -16,7 +16,8 @@ export function HttpLoaderFactory(http: HttpClient){
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+   
   ],
   imports: [
     CommonModule,
@@ -33,6 +34,6 @@ export function HttpLoaderFactory(http: HttpClient){
       }
     })
   ],
-  exports: [HeaderComponent, FooterComponent]
+  exports: [HeaderComponent, FooterComponent ]
 })
 export class GeneralModule { }

@@ -13,7 +13,12 @@ import { projectsComponent } from "./projects/projects.component";
 import { NgbModule, NgbNav, NgbNavModule } from "@ng-bootstrap/ng-bootstrap";
 import { CarouselModule } from "ngx-owl-carousel-o";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-
+import { BlogComponent } from "./blogs/blogs.component";
+import { RouterModule } from "@angular/router";
+import { NgbDropdownModule } from "@ng-bootstrap/ng-bootstrap";
+import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
+import { GeneralModule } from "../general/general.module";
 export function HttpLoaderFactory(http: HttpClient) {
 	return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
@@ -28,11 +33,20 @@ export function HttpLoaderFactory(http: HttpClient) {
 		MoreprojectsComponent,
 		ContactComponent,
 		TestimonialComponent,
+		BlogComponent,
+		
 	],
 	imports: [
+		GeneralModule,
 		CommonModule,
 		NgbNavModule,
 		CarouselModule,
+		CommonModule,
+		NgbModule,
+		RouterModule,
+		NgbDropdownModule,
+		FormsModule,
+		ReactiveFormsModule,
 		TranslateModule.forChild({
 			loader: {
 				provide: TranslateLoader,

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  trackAnalyticID: "G-XE9X54XCMH"
+  trackAnalyticID: "G-XE9X54XCMH",
+  apiUrl: 'http://localhost:3000/api'
 };
 
 /*
