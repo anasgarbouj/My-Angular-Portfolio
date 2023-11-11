@@ -11,24 +11,22 @@ export class LanguageService {
 
   constructor(
     public translateService: TranslateService,
-    private location: Location,
   ) {}
 
-  initLanguage(){
-    this.translateService.addLangs(["en", "es"])
+  initLanguage() {
+    this.translateService.addLangs(["en", "es"]);
     let language = navigator.language || (navigator as any).userLanguage;
-    language = "en"
-    this.translateService.setDefaultLang(language)
+    language = "en"; // Setting the default language to English
+    this.translateService.setDefaultLang(language);
 
-    // Change the URL without navigate:
-    this.location.go(language)
+    // Removed the this.location.go(language) line
 
-    this.language=language
+    this.language = language;
   }
 
-  changeLanguage(language){
-    this.translateService.setDefaultLang(language)
-    this.location.go(language)
-    this.language=language
+  changeLanguage(language: "es" | "en") {
+    this.translateService.setDefaultLang(language);
+    // Removed the this.location.go(language) line
+    this.language = language;
   }
 }

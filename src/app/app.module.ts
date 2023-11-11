@@ -13,6 +13,17 @@ import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { CommonModule } from '@angular/common';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ManagePortfolioComponent } from './manage-portfolio/manage-portfolio.component';
 
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,13 +32,25 @@ export function HttpLoaderFactory(http: HttpClient){
 @NgModule({
   declarations: [
     AppComponent,
+    SignInComponent,
+    SignUpComponent,
+    ManagePortfolioComponent
     /* ArchiveComponent */
   ],
   imports: [
+    CommonModule,
+		NgbNavModule,
+		CarouselModule,
+		
+		NgbModule,
+		RouterModule,
+		NgbDropdownModule,
+		FormsModule,
+		ReactiveFormsModule,
     BrowserAnimationsModule,
 
     HomeModule,
-    GeneralModule,
+   
 
     AnimateOnScrollModule.forRoot(),
     BrowserModule,

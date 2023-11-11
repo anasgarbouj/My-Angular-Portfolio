@@ -1,0 +1,80 @@
+<!-- Loop through each blog in the blogs array -->
+<div class="notification-popup" *ngIf="missingName">
+    <p>Sorry, you didn't put your name.</p>
+  </div>
+  
+  <!-- Notification for missing content -->
+  <div class="notification-popup" *ngIf="missingContent">
+    <p>Sorry, you didn't put the content.</p>
+  </div>
+  
+  <!-- Success Notification Popup -->
+  <div class="notification-popup" *ngIf="showNotification">
+    <p>Thank you for your comment. Just wait for admin to accept it.</p>
+  </div>
+<div class="section">
+    <div class="blogs-container">
+
+    <div class="section-box">
+<div>
+    <h3 class="section-title">
+        <span class="n-section-title">05.</span>
+        blogs
+    </h3>
+</div>
+
+<div *ngFor="let blog of blogs"> 
+    <article class="blog-post" (click)="selectBlog(blog)">
+        <header class="blog-post-header">
+        <h2>{{ blog.title }}</h2>
+        <div class="blog-post-meta">
+          <span class="date">Date: {{ blog.createdAt | date: 'yyyy-MM-dd'  }}</span>
+        </div>
+      </header>
+      <section class="blog-post-content">
+        {{ blog.content | slice:0:100 }}... <!-- Show a preview of the content -->
+    </section>
+      <footer class="blog-post-footer">
+        <div class="comments-count">
+          Comments: {{ blog.comments.length }}
+        </div>
+        <!-- Here you can add more content, like a loop for comments or a form to add comments -->
+      </footer>
+    </article>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal Section -->
+<div *ngIf="selectedBlog" class="modal" (click)="clearSelectedBlog()">
+    <div class="modal-content" (click)="$event.stopPropagation()"> <!-- Prevent click inside the modal from closing it -->
+      <span class="close" (click)="clearSelectedBlog()">&times;</span>
+      <h2>{{ selectedBlog.title }}</h2>
+      <div class="blog-post-meta">
+        <span class="date">Date: {{ selectedBlog.createdAt | date: 'yyyy-MM-dd'}}</span>
+        <!-- Add more metadata if needed -->
+      </div>
+      <div class="blog-post-content-full">{{ selectedBlog.content }}</div>
+      <div class="blog-post-comments" *ngIf="comments ">
+        <h3>Comments</h3>
+      <!-- Iterate over existing comments if needed -->
+      <ul>
+        <li *ngFor="let comment of comments">
+          <p>{{ comment?.content }}</p>
+          <small>Posted by: {{ comment?.name }}</small> <!-- Updated to use name from comment -->
+        </li>
+      </ul>
+      
+      
+      <!-- Add Comment Form -->
+      <form class="comment-form" (submit)="addComment(selectedBlog._id, commentInput.value, commenterName.value)">
+        <input type="text" #commenterName placeholder="Your name..." required />
+        <input type="text" #commentInput placeholder="Add a comment..." required />
+        <button type="submit" >Post Comment</button>
+      </form>
+    </div>
+  </div>
+</div>
+  
+  
