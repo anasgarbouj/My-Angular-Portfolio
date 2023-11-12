@@ -54,7 +54,7 @@
     }
   
     .blog-post-content {
-        color: $LightestSlate;
+        color: $White;
         font-family: $MainFont;
         font-size: 1em; // Adjust font size for mobile readability
         line-height: 1.6;
@@ -88,7 +88,7 @@
   
   .modal-content {
     background-color: $LightNavy;
-    color: $LightSlate;
+    color: $White;
     margin: auto; // Centering inside the flex parent
     padding: 20px;
     border: 1px solid $LightestNavy;
