@@ -5,7 +5,7 @@ import { CommentService } from '../services/comment/comment.service';
 import { Comment } from '../models/comment.model';
 import { UserService } from '../services/auth/user.service';
 import { User } from 'src/app/models/user.model';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-manage-portfolio',
   templateUrl: './manage-portfolio.component.html',
@@ -37,6 +37,7 @@ export class ManagePortfolioComponent implements OnInit {
     private blogService: BlogService,
     private commentService: CommentService,
     private userService: UserService,
+    private router : Router
   ) {{
     this.setAuthor();
   }}
@@ -73,7 +74,13 @@ export class ManagePortfolioComponent implements OnInit {
     );
   }
 
+  logout(): void {
+    // Remove the token from local storage
+    localStorage.removeItem('token'); // Replace 'token' with the actual key you use
 
+    // Redirect to the login page
+    this.router.navigate(['/login']); // Adjust this path based on your routing setup
+  }
 
   loadBlogs(): void {
     this.blogService.getAllBlogs().subscribe(

@@ -24,8 +24,8 @@ export class CommentService {
     return headers;
   }
   createComment(content: string, name: string, blogId: string): Observable<Comment> {
-    const headers = this.getHeaders();
-    return this.http.post<Comment>(this.apiUrl, { content, name, blogId }, { headers });
+   
+    return this.http.post<Comment>(this.apiUrl, { content, name, blogId });
   }
 
   getCommentsForBlog(blogId: string): Observable<CommentResponse> {
