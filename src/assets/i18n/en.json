@@ -22,6 +22,13 @@
 	"Experience.Title": "Where I've Worked",
 	"Experience.Jobs": [
 		{
+			"Tab": "Xtendplex group",
+			"Title": "Part time front-end developer",
+			"Date": "mars 2024",
+			"Description": [
+						]
+		},
+		{
 			"Tab": "Etixway Paris",
 			"Title": "Full Stack development internship",
 			"Date": "july-august 2023",
