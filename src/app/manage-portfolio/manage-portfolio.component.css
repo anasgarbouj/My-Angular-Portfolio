@@ -39,9 +39,12 @@ table {
     padding: 10px;      /* Padding for internal spacing */
     margin-top: 10px;   /* Margin for spacing outside the textarea */
     border: 1px solid #ccc; /* Border for better visibility */
-    resize: vertical;   /* Allow vertical resizing */
   }
-  
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+}
+
   .close-button {
     color: #aaa;
     float: right;
