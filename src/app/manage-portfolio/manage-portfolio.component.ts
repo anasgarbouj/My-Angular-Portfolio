@@ -75,11 +75,9 @@ export class ManagePortfolioComponent implements OnInit {
   }
 
   logout(): void {
-    // Remove the token from local storage
-    localStorage.removeItem('token'); // Replace 'token' with the actual key you use
+    localStorage.removeItem('token'); 
 
-    // Redirect to the login page
-    this.router.navigate(['/login']); // Adjust this path based on your routing setup
+    this.router.navigate(['/login']);
   }
 
   loadBlogs(): void {
@@ -107,7 +105,7 @@ export class ManagePortfolioComponent implements OnInit {
 
   openUpdateModal(blog: Blog): void {
     this.selectedBlog = blog;
-    this.editBlogData = { ...blog }; // Clone the blog data
+    this.editBlogData = { ...blog }; 
     this.loadUserDetails(blog.author);
     this.showModal = true;
   }
@@ -122,7 +120,6 @@ export class ManagePortfolioComponent implements OnInit {
       return;
     }
 
-    // Set updatedAt to current time before sending the update
     this.editBlogData.updatedAt = new Date();
 
     this.blogService.updateBlog(this.selectedBlog._id, this.editBlogData).subscribe(
@@ -178,7 +175,7 @@ export class ManagePortfolioComponent implements OnInit {
   }
 
   updateCommentStatus(comment: Comment): void {
-    console.log('Updating status for comment ID:', comment._id); // Add this line for debugging
+    console.log('Updating status for comment ID:', comment._id); 
 
     this.commentService.updateCommentStatus(comment._id, comment.status)
       .subscribe(
@@ -209,18 +206,15 @@ export class ManagePortfolioComponent implements OnInit {
       () => {
         this.comments = this.comments.filter(comment => comment._id !== this.selectedCommentId);
         this.selectedCommentId = null;
-        this.showDeleteConfirmation = false; // Close the confirmation modal
-        // Set the message for the notification popup
+        this.showDeleteConfirmation = false; 
         this.notificationMessage = "Comment deleted successfully!";
         this.showStatusUpdatePopup = true;
-        setTimeout(() => this.showStatusUpdatePopup = false, 3000); // Hide after 3 seconds
+        setTimeout(() => this.showStatusUpdatePopup = false, 3000);
       },
       error => {
         console.error('Error deleting comment', error);
-        // Optionally, display an error notification
       }
     );
   }
 
-  // Add any other methods or logic needed for the component
 }
