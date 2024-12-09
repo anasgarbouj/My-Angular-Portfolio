@@ -20,4 +20,4 @@ RUN npm run build --prod
 EXPOSE 80
 
 # Start the app
-CMD ["npm", "start"]
+CMD ["ng", "serve"]
